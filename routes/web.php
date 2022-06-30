@@ -13,14 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('home');
 }) ->name('home');
 
 Route::get('/contatti', function () {
-    return view('contatti');
+    return view('contatti'); 
 }) ->name('contatti');
 
 Route::get('/chi-siamo', function () {
     return view('chi-siamo');
 }) ->name('chi-siamo');
+*/
+
+Route::get( '/', 'PageController@index')->name('home');
+
+Route::get( '/contatti', 'PageController@contatti')->name('contatti');
+
+Route::get( '/chi-siamo', 'PageController@chiSiamo')->name('chi-siamo');

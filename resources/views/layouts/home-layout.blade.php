@@ -17,7 +17,7 @@
 
     @include('partials.header')
 
-    
+    @yield('home-content');
 
     @include('partials.footer')
     
