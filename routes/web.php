@@ -32,3 +32,5 @@ Route::get( '/', 'PageController@index')->name('home');
 Route::get( '/contatti', 'PageController@contatti')->name('contatti');
 
 Route::get( '/chi-siamo', 'PageController@chiSiamo')->name('chi-siamo');
+
+Route::get( '/movies', 'MovieController@index')->name('movies');

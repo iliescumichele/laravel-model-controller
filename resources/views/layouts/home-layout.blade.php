@@ -18,6 +18,7 @@
     @include('partials.header')
 
     @yield('home-content');
+    @yield('movie-content');
 
     @include('partials.footer')
     
